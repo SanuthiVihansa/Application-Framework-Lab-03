@@ -1,4 +1,19 @@
 
+const myPromise = new Promise((resolve, reject) => {
+    if (condition) {
+    resolve('Success!');
+    } else {
+    reject('Failure!');
+    }
+   });
+   myPromise.then((result) => {
+    console.log(result);
+   }).catch((error) => {
+    console.log(error);
+   });
+   
+
+
 const https = require('https');
 https.get('https://jsonplaceholder.typicode.com/posts/1', (resp) => {
  let data = '';
@@ -22,3 +37,4 @@ async function myFunction() {
    }
    myFunction();
   
+
